@@ -4,6 +4,7 @@
   "description": "astonjs-workshop-assignments",
   "main": "index.js",
   "scripts": {
+    "preinstall": "git config core.hooksPath hooks",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
