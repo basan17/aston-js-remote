@@ -1,6 +1,7 @@
 # Aston JS 44 repo
 
 **Student: Basang Basangov**
+
 **Workshop organizer: astondevs.ru**
 
 ### Description
