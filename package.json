@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "git config core.hooksPath hooks",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
+  "type": "module",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^2.1.8"
+  }
 }
