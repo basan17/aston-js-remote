@@ -24,12 +24,29 @@ describe(`
     expect(getLength(undefined)).toBe(0);
   });
 
-  test("function returns 0", () => {
-    expect(getLength(() => {})).toBe(0);
+  test("object with 2 properties returns 2", () => {
+    expect(getLength({ name: "Bob", surname: "Smith" })).toBe(2);
   });
 
-  test("object returns 0", () => {
-    expect(getLength({ name: "Bob", surname: "Smith" })).toBe(0);
+  function func1(a, b) {
+    return a + b;
+  }
+  test("function with 2 parameters returns 2", () => {
+    expect(getLength(func1)).toBe(2);
+  });
+
+  function func2(a, b, c) {
+    return a + b + c;
+  }
+  test("function with 3 parameters returns 3", () => {
+    expect(getLength(func2)).toBe(3);
+  });
+
+  const mySet1 = new Set();
+  mySet1.add(1);
+  mySet1.add(5);
+  test("a set with 2 values returns 2", () => {
+    expect(getLength(mySet1)).toBe(2);
   });
 
   test("Symbol() returns 0", () => {
