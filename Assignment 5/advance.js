@@ -1,15 +1,20 @@
-// сложность алгоритма для функции firstSum равна O(n^2)
-// т.к. проходит по двум циклам for, где один вложен в другой.
+// сложность алгоритма для функции firstSum равна O(n)
+// т.к. в худшем сценарии - где нет пары подходящих чисел,
+// алгоритм пройдет по циклу for полностью.
 
-export function firstSum(arr, total) {
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = i + 1; j > 0; j--) {
-      if (arr[i] == arr[j]) continue;
-      if (arr[i] + arr[j] === total) {
-        return [arr[i], arr[j]];
-      }
+export function firstSum(arr, sum) {
+  const seenNumbers = new Set();
+
+  for (let number of arr) {
+    const complement = sum - number;
+
+    if (seenNumbers.has(complement)) {
+      return [complement, number];
     }
+
+    seenNumbers.add(number);
   }
+
   return [];
 }
 
