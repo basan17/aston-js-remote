@@ -1,0 +1,36 @@
+# Sorting algoritms
+
+- Bubble sort
+- In-place merge sort
+- Heapsort
+- Introsort
+- Merge sort
+- Tournament sort
+- Tree sort
+- Block sort
+- Smooth sort
+- Timsort
+- Patience sorting
+- Cubersort
+- Quicksort
+- Library sort
+- Shellsort
+- Comb sort
+- Insertion sort
+- Cocktail shaker sort
+- Gnome sort
+- Odd-even sort
+- Simple panckake sort
+- Strand sort
+- Selection sort
+- Cycle sort
+
+- Pigeonhole sort
+- Bucket sort
+- Counting sort
+- LSD Radix sort
+- MSD Radix sort
+- Spreadsort
+- Burstsort
+- Flashsort
+- Postman sort
